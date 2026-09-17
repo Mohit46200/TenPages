@@ -270,7 +270,7 @@ export default function Navbar() {
                 rounded-full
               "
             >
-              L
+              T
             </div>
 
             <div
