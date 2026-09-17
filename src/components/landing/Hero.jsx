@@ -1499,6 +1499,7 @@ function BookCard({ title, author, spine, className }) {
   );
 }
  
+
 function BookStack() {
   return (
     <div className="relative mx-auto h-64 w-full max-w-xs sm:h-80 sm:max-w-sm lg:h-96 lg:max-w-none">
@@ -1508,17 +1509,29 @@ function BookStack() {
         spine={COLORS.navy}
         className="left-0 top-0 z-10 -rotate-6 sm:left-4"
       />
+
       <BookCard
         title="Systems of Attention"
         author="D. R. Okafor"
         spine={COLORS.oxblood}
         className="left-1/2 top-4 z-20 -translate-x-1/2 rotate-3"
       />
-      <div className="absolute right-0 top-10 z-30 -rotate-2 sm:right-40">
-        <BookCard title="The Unfinished Room" author="Marta Solheim" spine={COLORS.forest} className="static" />
+
+      <div className="absolute right-2 top-8 z-30 -rotate-2 sm:right-40 sm:top-10">
+        <BookCard
+          title="The Unfinished Room"
+          author="Marta Solheim"
+          spine={COLORS.forest}
+          className="static"
+        />
+
         <span
           className="absolute -right-2 -top-2 rounded-full px-2 py-0.5 text-xs font-medium"
-          style={{ backgroundColor: COLORS.gold, color: COLORS.ink, fontFamily: "'Work Sans', sans-serif" }}
+          style={{
+            backgroundColor: COLORS.gold,
+            color: COLORS.ink,
+            fontFamily: "'Work Sans', sans-serif",
+          }}
         >
           PDF
         </span>
@@ -1526,6 +1539,8 @@ function BookStack() {
     </div>
   );
 }
+
+
  
 export default function Hero() {
   useGoogleFonts();
