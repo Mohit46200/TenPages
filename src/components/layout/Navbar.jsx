@@ -283,7 +283,7 @@ export default function Navbar() {
                   font-display text-[23px] tracking-[-0.04em]
                 "
               >
-                Leafbound
+                TenPages
               </div>
 
               <div
