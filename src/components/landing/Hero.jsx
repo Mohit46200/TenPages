@@ -1517,7 +1517,7 @@ function BookStack() {
         className="left-1/2 top-4 z-20 -translate-x-1/2 rotate-3"
       />
 
-      <div className="absolute right-2 top-8 z-30 -rotate-2 sm:right-40 sm:top-10">
+      <div className="absolute left-1/2 top-8 z-30 -translate-x-[35%] -rotate-2 sm:left-auto sm:right-40 sm:top-10 sm:translate-x-0">
         <BookCard
           title="The Unfinished Room"
           author="Marta Solheim"
