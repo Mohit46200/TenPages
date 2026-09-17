@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+  }
+
+  ::selection {
+    @apply bg-brass/30;
+  }
+
+  /* Respect users who've asked for less motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-oxblood text-paper-light px-5 py-2.5
+      text-sm font-medium tracking-wide hover:bg-oxblood-dark transition-colors duration-200
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border border-ink/30 text-ink px-5 py-2.5
+      text-sm font-medium tracking-wide hover:border-ink hover:bg-ink/5 transition-colors duration-200
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass;
+  }
+
+  .input-field {
+    @apply w-full border border-ink/25 bg-paper-light px-4 py-2.5 text-ink placeholder:text-ink-soft/50
+      focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-colors;
+  }
+
+  .section-heading {
+    @apply font-display text-3xl md:text-4xl font-medium text-ink;
+  }
+}
