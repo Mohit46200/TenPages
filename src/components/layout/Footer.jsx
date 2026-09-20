@@ -4,14 +4,14 @@ export default function Footer() {
   return (
     <footer className="bg-ink text-paper-light/80 mt-24">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 grid grid-cols-2 md:grid-cols-3 gap-8">
-        <div className="col-span-2 md:col-span-1">
+        <div className="col-span-2 md:col-span-1 min-w-0">
           <h4 className="font-display text-xl text-paper-light">Leafbound</h4>
           <p className="text-sm mt-2 text-paper-light/60">
             A small shop for readers who dog-ear their favourite pages.
           </p>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <h5 className="text-sm font-medium text-paper-light mb-3">Shop</h5>
           <ul className="space-y-2 text-sm">
             <li>
@@ -27,10 +27,10 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <h5 className="text-sm font-medium text-paper-light mb-3">Support</h5>
           <ul className="space-y-2 text-sm">
-            <li>adarshyadavmw2@gmail.com</li>
+            <li className="break-words">adarshyadavmw2@gmail.com</li>
             <li>
               <a href="tel:+919473768596" className="hover:text-brass-light">
                 +91 9473768596
