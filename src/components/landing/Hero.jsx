@@ -1344,13 +1344,14 @@ function useGoogleFonts() {
 function Logo() {
   return (
     <a href="/" className="flex shrink-0 items-center gap-2.5" aria-label="Folio home">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
-        <rect x="4" y="3" width="18" height="24" rx="1" fill={COLORS.oxblood} />
-        <rect x="4" y="3" width="4" height="24" rx="1" fill={COLORS.gold} />
-        <path d="M22 3 L26 7 V27 H22 Z" fill="#000000" opacity="0.3" />
-        <rect x="10" y="10" width="8" height="1.3" fill={COLORS.parchment} opacity="0.85" />
-        <rect x="10" y="13.5" width="6" height="1.3" fill={COLORS.parchment} opacity="0.55" />
-      </svg>
+      <img
+        src="/images/logo.png"
+        alt="TenPages"
+        width={80}
+        height={80}
+         className="rounded-full object-cover"
+      />
+
       <span
         style={{ fontFamily: "'Fraunces', serif", color: COLORS.parchment }}
         className="text-xl font-medium tracking-tight"
